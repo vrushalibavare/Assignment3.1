@@ -9,7 +9,7 @@ on:
         default: "dev"
 
 jobs:
-  terraform-plan:
+  terraform-destroy:
     runs-on: ubuntu-latest
 
     steps:
