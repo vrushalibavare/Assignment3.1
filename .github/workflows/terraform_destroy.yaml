@@ -1,8 +1,12 @@
 name: Terraform destroy Workflow
 
 on:
-  push:
-    branches: ["main"]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment to destroy"
+        required: true
+        default: "dev"
 
 jobs:
   terraform-plan:
